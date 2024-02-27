@@ -117,3 +117,34 @@ i {
   color: #fff;
   margin-top: 10px;
 }
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .btn-input {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #hourly-forecast {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hourly-item {
+    margin-bottom: 10px;
+  }
+}
