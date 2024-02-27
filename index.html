@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyCast</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./images/logo.png" type="image/icon type" />
+
+    <script
+      src="https://kit.fontawesome.com/c4702f7f09.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="weather-container">
+      <div class="title">
+        <img
+          src="./images/logo.png"
+          alt="Logo"
+          class="logo"
+          width="50px"
+          height="50px"
+        />
+
+        <h2>Your weather update</h2>
+      </div>
+
+      <div class="btn-input">
+        <input type="text" id="city" placeholder="Enter city name" />
+        <i
+          class="fa-solid fa-magnifying-glass fa-lg"
+          onclick="searchWeather()"
+        ></i>
+        <i
+          class="fa-solid fa-location-dot fa-lg"
+          onclick="handleLocation()"
+          id="loc"
+        ></i>
+      </div>
+
+      <img id="weather-icon" alt="Weather Icon" />
+
+      <div id="temp-div"></div>
+
+      <div id="weather-info"></div>
+
+      <div id="hourly-forecast"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
